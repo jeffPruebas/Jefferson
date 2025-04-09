@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta name="author" content="SemiColonWeb">
+		<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+	
+		<!-- Font Imports -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+	
+		<!-- Core Style -->
+		<link rel="stylesheet" href="style.css">
+	
+		<!-- Font Icons -->
+		<link rel="stylesheet" href="css/font-icons.css">
+	
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!-- Favicon -->
+		<link rel="icon" href="images/bag.png" type="image/x-icon">
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Document Title -->
+		<title>Portafolio personal</title>
+	</head>
+	
+<style>
+	#header {
+      background-color: #222;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+    }
+	/* Estilo por defecto para los iconos */
+	.fbox-icon a {
+		color: #333; /* Color por defecto */
+		font-size: 40px;
+		transition: all 0.3s ease-in-out; /* Efecto de transición suave */
+	}
+
+	/* Efecto hover cuando el mouse pasa por encima del icono */
+	.fbox-icon a:hover {
+		color: #007bff; /* Cambia el color a azul (puedes elegir otro color) */
+		transform: scale(1.1); /* Aumenta el tamaño del icono */
+	}
+
+	/* Estilo para el contenido de la caja de aptitudes */
+	.fbox-content h3 {
+		transition: color 0.3s ease-in-out;
+	}
+
+	/* Cambiar color de texto cuando el icono es hover */
+	.fbox-icon a:hover + .fbox-content h3 {
+		color: #007bff; /* Cambia el color del texto a azul cuando el icono se toque */
+	}
+	.bloque-relieve {
+	background-color: #f9f9f9; /* Color de fondo suave para resaltar del blanco */
+	padding: 40px;
+	margin: 40px auto;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra clara para relieve */
+	max-width: 1200px;
+}
+
+</style>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		
+		<header>
+			<!-- Puedes incluir aquí tu logo, navegación u otra info del header -->
+		  </header>
+		  
+		  <div id="header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+			<!-- Contenido que se va a ocultar/mostrar -->
+			<div id="info" style="display: flex; align-items: center; gap: 10px; transition: all 0.3s ease;">
+				<i class="fas fa-laptop-code" style="font-size: 20px; color: #007bff;"></i>
+				<span style="font-size: 16px; line-height: 1;">Desarrollado Web | Aplicaciones de escritorio - consola | Frontend & Backend | Admin de base de datos</span>
+			</div>
+		
+			<!-- Botón para mostrar/ocultar -->
+			<button onclick="toggleInfo()" style="border: none; background-color: transparent; cursor: pointer; font-size: 18px; color: #f9f9f9;">
+				<i id="toggleIcon" class="fas fa-chevron-left"></i>
+			</button>
+		</div>
+		
+		<script>
+			function toggleInfo() {
+				const info = document.getElementById('info');
+				const icon = document.getElementById('toggleIcon');
+		
+				if (info.style.display === 'none') {
+					info.style.display = 'flex';
+					icon.classList.remove('fa-chevron-right');
+					icon.classList.add('fa-chevron-left');
+				} else {
+					info.style.display = 'none';
+					icon.classList.remove('fa-chevron-left');
+					icon.classList.add('fa-chevron-right');
+				}
+			}
+		</script>
+		
+
+				<section id="content">
+					<div class="content-wrap">
+						<div class="container">
+		
+							<div id="section-couple" class="heading-block text-center page-section" data-onepage-settings="{&quot;offset&quot;:60,&quot;speed&quot;:1250,&quot;easing&quot;:false}">
+								<h2>Equipo Desarrollo</h2>
+								<span>Un gusto, somos personas capaces, profesionales en el área de Soluciones y desarrollos informáticos</span>
+							</div>
+		
+		
+							<div class="row col-mb-50 mb-0">
+								<div class="col-lg-6">
+									<div class="team team-list row">
+										<div class="team-image col-sm mb-4 mb-sm-0" style="max-width: 150px; overflow: hidden; height: 150px;">
+											<img class="rounded-circle" src="images/perfil_portafolio.jpeg" alt="Jefferson" style="object-fit: cover; width: 100%; height: 100%;">
+										</div>
+										<div class="team-desc col-sm">
+											<div class="team-title"><h4>Jefferson Villamarin Sanchez</h4><span>A cerca de:</span></div>
+											<div class="team-content">Graduado en la Universidad de Guayquil, carrera: Ingeniería en sistemas computacionales, me desempeño como desarrollador (Frontend & Backend) administración de base de datos.</div>
+											<div class="d-flex border-top border-default mt-4 pt-4">
+												<a href="https://www.facebook.com/jeffvilla92/" class="social-icon si-small bg-transparent h-bg-facebook" title="Facebook">
+													<i class="fa-brands fa-facebook-f"></i>
+													<i class="fa-brands fa-facebook-f"></i>
+												</a>
+												
+												<a href="https://www.instagram.com/jeffersonvillamarin" class="social-icon si-small bg-transparent h-bg-facebook" title="Instagram">
+													<i class="fa-brands fa-instagram"></i>
+													<i class="fa-brands fa-instagram"></i>
+												</a>
+												
+
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="col-lg-6">
+									<div class="team team-list row">
+										<div class="team-image col-sm mb-4 mb-sm-0" style="max-width: 150px; overflow: hidden; height: 150px;">
+											<img class="rounded-circle" src="images/perfil_emm.jpeg" alt="Emmanuel" style="object-fit: cover; width: 100%; height: 100%;">
+										</div>
+										<div class="team-desc col-sm">
+											<div class="team-title"><h4>Emmanuel Robles Reyes</h4><span>A cerca de:</span></div>
+											<div class="team-content">Graduado en la Universidad de Guayquil, carrera: Ingeniería en sistemas computacionales, me desempeño como desarrollador (Frontend & Backend) y diseño.</div>
+
+											<div class="d-flex border-top border-default mt-4 pt-4">
+												<a href="#" class="social-icon si-small bg-transparent h-bg-facebook" title="Facebook">
+													<i class="fa-brands fa-facebook-f"></i>
+													<i class="fa-brands fa-facebook-f"></i>
+												</a>
+												
+												<a href="https://www.instagram.com/emmanuel_21r?igsh=MWFzcTU5aWNpN29nZA==" class="social-icon si-small bg-transparent h-bg-facebook" title="Instagram">
+													<i class="bi-instagram"></i>
+													<i class="bi-instagram"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="container">
+
+								<div class="heading-block mt-6 text-center">
+									<h2>Aptitudes</h2>
+									<span class="mx-auto">Características que nos definen como personas profesionales al realizar nuestro trabajo.</span>
+								</div>
+			
+								<div class="row align-items-center col-mb-50 mb-4">
+									<div class="col-lg-4 col-md-6">
+			
+										<div class="feature-box flex-md-row-reverse text-md-end" data-animate="fadeIn">
+											<div class="fbox-icon">
+												<a href="#"><i class="bi-people-fill"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Trabajo en equipo</h3>
+											
+											</div>
+										</div>
+										
+			
+										<div class="feature-box flex-md-row-reverse text-md-end mt-5" data-animate="fadeIn" data-delay="200">
+											<div class="fbox-icon">
+												<a href="#"><i class="bi-person-check"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Responsabilidad</h3>
+											
+											</div>
+										</div>
+			
+										<div class="feature-box flex-md-row-reverse text-md-end mt-5" data-animate="fadeIn" data-delay="400">
+											<div class="fbox-icon">
+												<a href="#"><i class="bi-speedometer"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Eficiencia</h3>
+											
+											</div>
+										</div>
+			
+									</div>
+			
+									<div class="col-lg-4 d-md-none d-lg-block text-center">
+										<!--<img src="images/services/iphone7.png" alt="iphone 2"> -->
+									</div>
+			
+									<div class="col-lg-4 col-md-6">
+			
+										<div class="feature-box" data-animate="fadeIn">
+											<div class="fbox-icon">
+												<a href="#"><i class="bi-tools"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>mantenimiento</h3>
+											
+											</div>
+										</div>
+			
+										<div class="feature-box mt-5" data-animate="fadeIn" data-delay="200">
+											<div class="fbox-icon">
+												<a href="#"><i class="bi-chat-dots"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Comunoicación</h3>
+											
+											</div>
+										</div>
+			
+										<div class="feature-box mt-5" data-animate="fadeIn" data-delay="400">
+											<div class="fbox-icon">
+												<a href="#"><i class="bi-lightbulb"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Proactividad</h3>
+												
+											</div>
+										</div>
+			
+									</div>
+								</div>
+			
+							</div>
+			
+							
+			
+							</div>
+
+		<div class="bloque-relieve">
+							<div class="heading-block mt-6 text-center">
+								<h2>Lenguajes, habilidades y herramientas</h2>
+								<span class="mx-auto">Tecnologías usadas en desarrollo</span>
+							</div>
+
+							<div class="container">
+
+								<div class="row col-mb-50 gx-5">
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn">
+											<div class="fbox-icon">
+												<a href="#"> <i class="fa-solid fa-code"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>C#</h3>
+												<p>Desarrollo de aplicaciones de consola y formularios</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="200">
+											<div class="fbox-icon">
+												<a href="#"><i class="fab fa-html5" style="font-size: 48px; color: #e34c26;"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Html</h3>
+												<p>Desarrollo de páginas y sitios Web</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="400">
+											<div class="fbox-icon">
+												<a href="#"><i class="fab fa-css3-alt" style="font-size: 48px; color: #264de4;"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Css</h3>
+												<p>Diseño de páginas y sitios Web<</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="600">
+											<div class="fbox-icon">
+												<a href="#"><i class="fab fa-js" style="font-size: 48px; color: #f7df1e;"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>JavaScript</h3>
+												<p>Validaciones Frontend de páginas y sitios web</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="800">
+											<div class="fbox-icon">
+												<a href="#"><i class="fab fa-node-js" style="font-size: 48px; color: #539e43;"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Node.js express</h3>
+												<p>Desarrollo Bakcend, APIs RESTful, integrando servicios externos y manejando 
+													operaciones asíncronas.</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="1000">
+											<div class="fbox-icon">
+												<a href="#"><i class="fab fa-php" style="font-size: 35px; color: #8993be;"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>PHP </h3>
+												<p>Desarrollo de sistema web para escuela</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="600">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-code"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Visual Basic</h3>
+												<p>Desarrollo y mantenimiento de sistema bancario</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="800">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-database" style="font-size: 48px; color: #0077b5;"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Sql</h3>
+												<p>Administarción en base de datos</p>
+											</div>
+										</div>
+									</div>
+			
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="1000">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-code"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Web Services</h3>
+												<p>Servicios web en WCF</p>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="800">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-code"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Api rest</h3>
+												<p>Diseño y desarrollo de APIs RESTful eficientes y escalables para la integración de aplicaciones.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="1000">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-code"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Arquitecturas usadas</h3>
+												<p>Esquemas y estructuras usadas en diferentes procesos: MVC</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="800">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-code"></i></a>
+											</div>
+											<div class="fbox-content">
+												<h3>Metodologías</h3>
+												<ul>
+													<li>Cascada</li>
+													<li>Scrum</li>
+													<li>Ágil</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="800">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-tools"></i></a> <!-- Icono actualizado -->
+											</div>
+											<div class="fbox-content">
+												<h3>Herramientas</h3>
+												<ul>
+													<li>Visual Studio Code</li>
+													<li>GitHub</li>
+													<li>TFS</li>
+													<li>Xampp</li>
+													<li>Soap</li>
+													<li>WCF</li>
+													<li>Postman</li>
+													<li>Swagger UI</li>
+													<li>PHP storm</li>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="800">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-store"></i></a> <!-- Icono de tienda/comercio -->
+											</div>
+											<div class="fbox-content">
+												<h3>Conocimientos comercios</h3>
+												<ul>
+													<li>Facturación</li>
+													<li>Tarjetas de crédito</li>
+													<li>Sistema escolar</li>
+													<li>Departamento médico</li>
+													<li>Tiendas</li>
+													<li>Catalogos</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-sm-6 col-lg-4">
+										<div class="feature-box fbox-sm fbox-plain" data-animate="fadeIn" data-delay="800">
+											<div class="fbox-icon">
+												<a href="#"><i class="fa-solid fa-paint-brush"></i>
+												</a> 
+											</div>
+											<div class="fbox-content">
+												<h3>Diseño y maquetación</h3>
+												<ul>
+													<li>Bootstrap</li>
+													<li>Sweet alert</li>
+													<li>Adaptación Responsive</li>
+												</ul>
+											</div>
+										</div>
+									</div>									
+									
+								</div>			
+							</div>
+				</div>
+						
+							<div class="section mt-5 mb-0 border-bottom-0">
+								<div class="container">
+									<div class="heading-block text-center m-0">
+										<h3>Trabajos realizados</h3>
+									</div>
+								</div>
+							</div>
+			
+							<div id="portfolio" class="portfolio row g-0 portfolio-reveal grid-container">
+			
+								<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-media pf-icons">
+									<div class="grid-inner">
+										<div class="portfolio-image">
+											<a href="portfolio-single.html">
+												<img src="images/portfolio/1/work1.jpeg" alt="Open Imagination">
+											</a>
+											<div class="bg-overlay">
+												<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+													<a href="images/portfolio/full/work1.jpeg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+													<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="uil uil-ellipsis-h"></i></a>
+												</div>
+												<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+											</div>
+										</div>
+										<div class="portfolio-desc">
+											<h3><a href="portfolio-single.html">Sistema contable</a></h3>
+											<span><a href="#">Sistema web</a></span>
+										</div>
+									</div>
+								</article>
+			
+								<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-illustrations">
+									<div class="grid-inner">
+										<div class="portfolio-image">
+											<a href="portfolio-single.html">
+												<img src="images/portfolio/2/work2.jpeg" alt="Locked Steel Gate">
+											</a>
+											<div class="bg-overlay">
+												<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+													<a href="images/portfolio/full/work2.jpeg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+													<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="uil uil-ellipsis-h"></i></a>
+												</div>
+												<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+											</div>
+										</div>
+										<div class="portfolio-desc">
+											<h3><a href="portfolio-single.html">Centro médico</a></h3>
+											<span><a href="#">Sistema web</a></span>
+										</div>
+									</div>
+								</article>
+			
+								<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics pf-uielements">
+									<div class="grid-inner">
+										<div class="portfolio-image">
+											<a href="#">
+												<img src="images/portfolio/3/work3.jpeg" alt="Mac Sunglasses">
+											</a>
+											<div class="bg-overlay">
+												<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+													<a href="images/portfolio/full/work3.jpeg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+													<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="uil uil-ellipsis-h"></i></a>
+												</div>
+												<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+											</div>
+										</div>
+										<div class="portfolio-desc">
+											<h3><a href="portfolio-single-video.html">Centro médico</a></h3>
+											<span><a href="#">Sistema web</a></span>
+										</div>
+									</div>
+								</article>
+
+
+								<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics pf-uielements">
+									<div class="grid-inner">
+										<div class="portfolio-image">
+											<a href="#">
+												<img src="images/portfolio/4/work4.png" alt="Mac Sunglasses">
+											</a>
+											<div class="bg-overlay">
+												<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+													<a href="images/portfolio/full/work4.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+													<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="uil uil-ellipsis-h"></i></a>
+												</div>
+												<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+											</div>
+										</div>
+										<div class="portfolio-desc">
+											<h3><a href="portfolio-single-video.html">Sistema de asistencia y control</a></h3>
+											<span><a href="#">Sistema web</a></span>
+										</div>
+									</div>
+								</article>
+
+								
+								<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics pf-uielements">
+									<div class="grid-inner">
+										<div class="portfolio-image">
+											<a href="#">
+												<img src="images/portfolio/5/work5.png" alt="Mac Sunglasses">
+											</a>
+											<div class="bg-overlay">
+												<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+													<a href="images/portfolio/full/work5.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+													<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="uil uil-ellipsis-h"></i></a>
+												</div>
+												<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+											</div>
+										</div>
+										<div class="portfolio-desc">
+											<h3><a href="portfolio-single-video.html">Administración GYM</a></h3>
+											<span><a href="#">Aplicación escritorio</a></span>
+										</div>
+									</div>
+								</article>
+
+								<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics pf-uielements">
+									<div class="grid-inner">
+										<div class="portfolio-image">
+											<a href="#">
+												<img src="images/coop.png" alt="Mac Sunglasses">
+											</a>
+											<div class="bg-overlay">
+												<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+													<a href="images/coop.png" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+													<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="uil uil-ellipsis-h"></i></a>
+												</div>
+												<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+											</div>
+										</div>
+										<div class="portfolio-desc">
+											<h3><a href="portfolio-single-video.html">Administración Cooperativa</a></h3>
+											<span><a href="#">Página web</a></span>
+										</div>
+									</div>
+								</article>
+
+								<article class="portfolio-item col-6 col-md-4 col-lg-3 pf-graphics pf-uielements">
+									<div class="grid-inner">
+										<div class="portfolio-image">
+											<a href="#">
+												<img src="images/dash.jpeg" alt="Mac Sunglasses">
+											</a>
+											<div class="bg-overlay">
+												<div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+													<a href="images/dash.jpeg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="image" title="Image"><i class="uil uil-plus"></i></a>
+													<a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="uil uil-ellipsis-h"></i></a>
+												</div>
+												<div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+											</div>
+										</div>
+										<div class="portfolio-desc">
+											<h3><a href="portfolio-single-video.html">Administración Cooperativa</a></h3>
+											<span><a href="#">Página web</a></span>
+										</div>
+									</div>
+								</article>
+			
+								
+				
+		
+							
+		
+							
+							</div>
+		
+							
+		
+						</div>
+		
+						
+		
+								</div>
+							</div>
+		
+						</div>
+
+				</section>
+		
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container text-center">
+
+					Copyrights &copy; 2025 All Rights Reserved<br>					
+
+				</div>
+				<div class="container text-center">
+					<i class="fab fa-whatsapp" style="color: #25D366; font-size: 24px;"></i>
+					<span class="ms-2">Contactos: 0984372486 / 0983505941</span>
+				</div>
+				
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(window).on( 'load', function(){
+			setTimeout( function(){
+				jQuery( '.flexslider .slide' ).resize();
+			}, 500 );
+		});
+	</script>
+
+</body>
+</html>
